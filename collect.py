@@ -4,8 +4,8 @@ import json
 import os
 from datetime import datetime
 
-VEHICLE_POSITIONS_URL = "https://gtfs.translink.ca/v2/gtfsposition"
-TRIP_UPDATES_URL = "https://gtfs.translink.ca/v2/gtfsrealtime"
+VEHICLE_POSITIONS_URL = "https://gtfsapi.translink.ca/v3/gtfsposition?apikey=WviHeItmNSUa3EyUvrB9"
+TRIP_UPDATES_URL = "https://gtfsapi.translink.ca/v3/gtfsrealtime?apikey=WviHeItmNSUa3EyUvrB9"
 
 def collect_data():
     os.makedirs("data", exist_ok=True)
